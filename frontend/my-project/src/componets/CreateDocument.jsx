@@ -12,7 +12,7 @@ function CreateDocument() {
     try {
 
       await axios.post(
-        "http://localhost:3000/documents",
+        "https://story-app-backend-hlrp.onrender.com/documents",
         data,
           {
     headers: {

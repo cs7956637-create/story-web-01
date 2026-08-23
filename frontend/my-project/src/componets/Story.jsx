@@ -10,7 +10,7 @@ function Story() {
     const getDocument = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/documents/${id}`
+          `https://story-app-backend-hlrp.onrender.com/documents/${id}`
         );
 
         setDocument(response.data);

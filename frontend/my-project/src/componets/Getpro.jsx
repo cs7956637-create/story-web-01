@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 
 const Getpro = () => {
     async function getdata() {
-        const res=await axios.get("http://localhost:3000/data")
+        const res=await axios.get("https://story-app-backend-hlrp.onrender.com/data")
         localStorage.setItem("token",res.data.token)
         console.log(res.data);
         

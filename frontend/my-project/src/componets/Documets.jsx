@@ -13,7 +13,7 @@ function Documents() {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:3000/dataget",
+          "https://story-app-backend-hlrp.onrender.com/dataget",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ const deleteDocument = async (id) => {
     console.log("Deleting ID:", id);
 
     const response = await axios.delete(
-      `http://localhost:3000/documents/${id}`,
+      `https://story-app-backend-hlrp.onrender.com/documents/${id}`,
       {
         headers: {
           Authorization: `Bearer ${token}`,

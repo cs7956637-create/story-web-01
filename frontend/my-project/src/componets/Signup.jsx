@@ -9,7 +9,7 @@ export const Signup = () => {
   async function createAc() {
     try {
       const res = await axios.post(
-        "http://localhost:3000/signup",
+        "https://story-app-backend-hlrp.onrender.com/signup",
         {
           name: name,
           password: password,
