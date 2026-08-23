@@ -1,0 +1,7 @@
+backend/node_modules/
+backend/.env
+
+frontend/my-project/node_modules/
+frontend/my-project/dist/
+frontend/my-project/.env
+frontend/my-project/.env.*
