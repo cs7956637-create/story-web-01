@@ -31,11 +31,12 @@ const [document, setDocument] = useState(null);
         setUser(res.data.user);
 
       } catch (error) {
-        console.log("PROFILE ERROR:", error.response?.data);
+  console.log("PROFILE ERROR:", error.response?.data);
+  console.log("TOKEN:", localStorage.getItem("token"));
 
-        localStorage.removeItem("token");
-        navigate("/");
-      }
+  // localStorage.removeItem("token");  // temporary ga remove cheyyi
+  // navigate("/");                     // temporary ga remove cheyyi
+}
     };
 
 
@@ -53,7 +54,7 @@ const [document, setDocument] = useState(null);
         },
       }
     );
-    console.log(response.data)
+    
 
     setDocument(response.data);
   } catch (error) {
